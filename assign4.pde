@@ -70,6 +70,13 @@ void setup ()
   //Interface
   size(640, 480) ;
   image(start1,0,0);
+  
+  //shoot location
+  for(int i=0; i<5; i++)
+  {
+    shootX[i] = 2*width;
+    shootY[i] = 2*height;
+  }
 }
 
 void draw() 
