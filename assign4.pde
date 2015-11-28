@@ -77,6 +77,7 @@ void setup ()
     shootX[i] = 2*width;
     shootY[i] = 2*height;
   }
+    
 }
 
 void draw() 
@@ -225,7 +226,7 @@ void draw()
         //Collision (shoot and Enemy)
         for(int i=0;i<5;i++)
           for(int j=0;j<5;j++)
-            if(dist(shootX[j],shootY[j],AllEnemyLocationX[i],AllEnemyLocationY[i])<50 && EnemyAlive[i] ==1)
+            if(dist(shootX[j]+25,shootY[j]+25,AllEnemyLocationX[i]+25,AllEnemyLocationY[i]+25)<40 && EnemyAlive[i] ==1)
             {
               
               EnemyAlive[i] = 0;
@@ -275,7 +276,7 @@ void draw()
         //Collision (shoot and Enemy)
         for(int i=0;i<5;i++)
           for(int j=0;j<5;j++)
-            if(dist(shootX[j],shootY[j],AllEnemyLocationX[i],AllEnemyLocationY[i])<50 && EnemyAlive[i] ==1)
+            if(dist(shootX[j]+25,shootY[j]+25,AllEnemyLocationX[i]+25,AllEnemyLocationY[i]+25)<40 && EnemyAlive[i] ==1)
             {
               
               EnemyAlive[i] = 0;
@@ -325,7 +326,7 @@ void draw()
         //Collision (shoot and Enemy)
         for(int i=0;i<8;i++)
           for(int j=0;j<5;j++)
-            if(dist(shootX[j],shootY[j],AllEnemyLocationX[i],AllEnemyLocationY[i])<50 && EnemyAlive[i] ==1)
+            if(dist(shootX[j]+25,shootY[j]+25,AllEnemyLocationX[i]+25,AllEnemyLocationY[i]+25)<40 && EnemyAlive[i] ==1)
             {
               
               EnemyAlive[i] = 0;
